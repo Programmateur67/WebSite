@@ -38,4 +38,91 @@
 .navbar
 {
     margin: 0px;
+    
+}
+.shadow
+{
+    border-bottom-color: darkgrey;
+    border-bottom-style: solid;
+    border-bottom-left-radius: 10px;
+}
+.center
+{
+    text-align: center;
+}
+figcaption
+{
+    font-style: italic;
+    color: darkgrey;
+    margin: 0px;
+    padding: 0px;
+}
+figure hr
+{
+    margin-bottom: 2px;
+    margin-top: 5px;
+}
+.section
+{
+    padding: 1%;
+}
+.btn-sm1
+{
+    margin-left: 5%;
+    text-align: left;
+}
+article
+{
+    text-align: justify
+}
+.section1
+{
+    padding: 1%;
+    background-color: #eaeaea;
+}
+.form-control
+{
+    margin-bottom: 1%;
+}
+.sign
+{
+    margin-top: 1%;
+}
+.well
+{
+    margin-bottom: 0px;
+}
+.centerfig
+{
+    margin-top: 5%;
+}
+.centerfig2
+{
+    margin-top: 7%;
+}
+.centerfig3
+{
+    margin-top: 0.5%;
+}
+.orange
+{
+    background-color: #e67e22;
+}
+.a
+{
+    color: #e67e22;
+    background-color: lightgray;
+    padding: 1%;
+    border-radius: 20px;
+}
+.a:hover
+{
+    background-color: darkgrey;
+    color: #e67e22;
+    font-style: normal;
+    text-decoration: none;
+}
+h4
+{
+    font-size: 200%;
 }
