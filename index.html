@@ -21,27 +21,67 @@
   </head>
   <body class="container-fluid">
       <header class="row hidden-xs">
-            <nav class="navbar navbar-default navbar-static col-md-12">
+            <nav class="navbar navbar-default navbar-fixed-top col-md-12">
                 <div class="navbar-header hidden-xs hidden-sm hidden-md col-lg-2">
                     <a href="index.html" class="navbar-brand btn">Red Meca</a>                    
                 </div>
-                <ul class="nav navbar-nav btn-group col-md-10 col-lg-8">
-                    <li><a href="pages_cat/creaprod.html" class="btn btn-sm1">CréaProd</a></li>
-                    <li><a href="pages_cat/multimedia.html" class="btn btn-sm1">Multimédia</a></li>
-                    <li><a href="pages_cat/games.html" class="btn btn-sm1">Games</a></li>
-                    <li><a href="pages_cat/podvlogs.html" class="btn btn-sm1">PodVlogs</a></li>
-                    <li><a href="pages_cat/sciences.html" class="btn btn-sm1">Sciences</a></li>
-                    <li><a href="pages_cat/seriesmovies.html" class="btn btn-sm1">SérieMovies</a></li>
-                    <li><a href="pages_cat/reflexion.html" class="btn btn-sm1">Réflexion</a></li>
-                    <li><a href="pages_cat/bazar.html" class="btn btn-sm1">Bazar</a></li>
+                <ul class="nav navbar-nav btn-group col-md-11 col-lg-9 hidden-sm">
+                    <li><a href="#Séries" class="btn btn-sm1">Séries</a></li>
+                    <li><a href="#CréaProd" class="btn btn-sm1">CréaProd</a></li>
+                    <li><a href="#Multimédia" class="btn btn-sm1">Multimédia</a></li>
+                    <li><a href="#Games" class="btn btn-sm1">Games</a></li>
+                    <li><a href="#PodVlogs" class="btn btn-sm1">PodVlogs</a></li>
+                    <li><a href="#Sciences" class="btn btn-sm1">Sciences</a></li>
+                    <li><a href="#SérieMovies" class="btn btn-sm1">SérieMovies</a></li>
+                    <li><a href="#Réflexion" class="btn btn-sm1">Réflexion</a></li>
+                    <li><a href="#Bazar" class="btn btn-sm1">Bazar</a></li>
+                    <li><a href="#Forum" class="btn btn-sm1">Forums</a></li>
+                    <li><a role="button" id=collapser2 class="btn btn-sm1"><span class="fa fa-plus"></span></a></li>
                 </ul>
-                <a href="Visitor/Profil.html" class=" col-lg-2 col-md-2 btn btn-warning aprofil">
+                <div class="row hidden-md hidden-lg">
+                <a role="button" id="collapser" class="bars btn col-sm-2 hidden-md hidden-lg"><span class="fa fa-bars"></span></a>
+                <div class="navbar-header hidden-xs hidden-lg hidden-md col-sm-8">
+                    <a href="index.html" class="navbar-brand btn">Red Meca</a>                    
+                </div>
+                <a href="Visitor/Profil.html" class="col-sm-2 btn btn-warning aprofil hidden-md hidden-lg">
                     <span class="fa fa-user" aria-hidden="true"></span>
-                    Mon Profil
                 </a>
-                <input type="search" placeholder="Recherche" class="input-md form-control"/>
+                    <div id="collapsed">
+                        <ul class="nav navbar-nav btn-group col-sm-12 hidden-md hidden-lg">
+                            <li class="inline"><a href="#Séries" class="btn btn-sm1">Séries</a></li>
+                            <li class="inline"><a href="#CréaProd" class="btn btn-sm1">CréaProd</a></li>
+                            <li class="inline"><a href="#Multimédia" class="btn btn-sm1">Multimédia</a></li>
+                            <li class="inline"><a href="#Games" class="btn btn-sm1">Games</a></li>
+                            <li class="inline"><a href="#PodVlogs" class="btn btn-sm1">PodVlogs</a></li>
+                            <li class="inline"><a href="#Sciences" class="btn btn-sm1">Sciences</a></li>
+                            <li class="inline"><a href="#SérieMovies" class="btn btn-sm1">SérieMovies</a></li>
+                            <li class="inline"><a href="#Réflexion" class="btn btn-sm1">Réflexion</a></li>
+                            <li class="inline"><a href="#Bazar" class="btn btn-sm1">Bazar</a></li>
+                            <li class="inline"><a href="#Forum" class="btn btn-sm1">Forums</a></li>
+                        </ul>
+                         <div id="collapsed" class="">
+                            <input type="search" placeholder="Recherche" class="input-md form-control"/>
+                            <ul class="row">
+                                <li><a href="#ht" class="col-sm-3 center btn btn-warning">Du High-Tech</a></li>
+                                <li><a href="#cat" class="col-sm-3 col-sm-offset-1 center btn btn-warning">Des catégories</a></li>
+                                <li><a href="#team" class="col-sm-3 col-sm-offset-1 center btn btn-warning">Une team</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="Visitor/Profil.html" class=" col-lg-1 col-md-1 btn btn-warning aprofil2 hidden-sm">
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                </a>
+                <div id="collapsed2" class="hidden-sm">
+                    <input type="search" placeholder="Recherche" class="input-md form-control"/>
+                    <ul class="row">
+                        <li><a href="#ht1" class="col-sm-3 center btn btn-warning">Du High-Tech</a></li>
+                        <li><a href="#cat1" class="col-sm-3 col-sm-offset-1 center btn btn-warning">Des catégories</a></li>
+                        <li><a href="#team1" class="col-sm-3 col-sm-offset-1 center btn btn-warning">Une team</a></li>
+                    </ul>
+                </div>
             </nav>
-            <div class="row">
+            <div class="row ban">
                 <img src="banniere.png" alt="bannière" class="img-responsive"/>
             </div>
       </header>
@@ -60,9 +100,37 @@
                 <button class="btn  col-xs-offset-2 col-xs-4 btnxs">Bazar</button>
             </div>
       </header>
-      <section class="forum">
-        <form class="form col-xs-12 well">
-          <legend>Besoin d'aide ? On a des forums !</legend>
+      <div>
+        <section id="Séries" class="section row">
+        <h1>En construction</h1>
+      </section>
+        <section id="CréaProd" class="section1 row">
+        <h1>En construction</h1>
+      </section>
+        <section id="Multimédia" class="section row">
+        <h1>En construction</h1>
+      </section>
+        <section id="Games" class="section1 row">
+        <h1>En construction</h1>
+      </section>
+        <section id="PodVlogs" class="section row">
+        <h1>En construction</h1>
+      </section>
+        <section id="Sciences" class="section1 row">
+        <h1>En construction</h1>
+      </section>
+        <section id="SérieMovies" class="section row">
+        <h1>En construction</h1>
+        </section>
+        <section id="Réflexion" class="section1 row">
+        <h1>En construction</h1>
+      </section>
+        <section id="Bazar" class="section row">
+        <h1>En construction</h1>
+      </section>
+        <section class="row forum section1" id="Forum">
+        <form class="col-xs-12 well form">
+          <legend>Besoin d'aide, on a des forums !</legend>
             <div class="form-group">
                 <label for="select">Choisissez la catégorie : </label>
                 <select id="select" class="form-control" required name="Choisissez votre catégorie">
@@ -89,6 +157,7 @@
             </div>
             <div class="form-group">
                 <label for="text">Votre message :</label>
+                <span id="end"></span>
                 <textarea id="text" type="textarea" rows="5" class="form-control" placeholder="Expliquez clairement en argémentant de code ou d'image si nécéssaire !"></textarea>
             </div>
             <button class="btn btn-warning pull-right" type="submit">
@@ -97,8 +166,11 @@
             </button>
         </form>
       </section>
+      </div>
+      <span id="end"></span>
       <section class="hidden-xs hidden-md hidden-lg">
-        <div class="section row well">
+        <div class="">
+            <div id="ht" class="section row well">
             <h4 class="col-md-12 center">Un thème : le High-Tech</h4>
             <article class="col-md-10 well">
                 <blockquote>
@@ -117,7 +189,7 @@
                 </figure>
             </aside>
         </div>
-        <div class="section1 row well">
+            <div id="cat" class="section1 row well">
             <h4 class="col-md-12 center">De la diversité : 8 catégories</h4>
             <aside class="hidden-sm">
                 <figure class="col-md-2 centerfig">
@@ -180,7 +252,7 @@
                 </figure>
             </aside>
         </div>
-        <div class="section row well">
+            <div id="team" class="section row well">
             <h4 class="col-md-12 center">Une équipe créative et dynamique</h4>
             <article class="col-md-10 well">
                 Au début j'ai dit <strong>"je"</strong>, après j'ai dit <strong>"nous"</strong>. Mais suis-je vraiment entouré d'une <strong>"team"</strong> ? On peut dire que oui, en fait pour vous expliquer mon fonctionnement je crée seul ce site, ainsi que <strong>RedMeca</strong> mais je ne serais pas le seul à poster du <strong>contenu</strong> ! En fait je vais m'occuper en grande partie de la catégorie <strong>Multimédia</strong>, je serai aussi un peu présent dans la catégorie <strong>Games</strong> mais ce seront plus des amis à moi qui créront le contenu, que je monterais et publierais. De même je ne suis pas seul à faire notre <strong>série</strong> et ce sera mon frère qui s'occuperas plus de la partie <strong>maths</strong> et <strong>physique</strong>. Je serais aussi épaulé dans la partie <strong>réflexion</strong>. Vous l'aurez compris je m'occupe plus de la partie technique que créative.<br/>Enfin, je suis ouvert à toutes les contributions de votre part, si vous souhaitez participer à l'aventure <strong>RedMeca</strong> il vous suffit de me contacter par <a href="mailto:redmeca.yt@gmail.com" class="mail" type="mail">mail</a> je vous répondrai dans la mesure du possible...
@@ -193,9 +265,10 @@
                 </figure>
             </aside>
         </div>
+        </div>
       </section>
       <section class="hidden-xs hidden-sm">
-        <div class="section row well">
+        <div id="ht1" class="section row well">
             <h4 class="col-md-12 center">Un thème : le High-Tech</h4>
             <article class="col-md-10 well">
                 <blockquote>
@@ -214,7 +287,7 @@
                 </figure>
             </aside>
         </div>
-        <div class="section1 row well">
+        <div id="cat1" class="section1 row well">
             <h4 class="col-md-12 center">De la diversité : 8 catégories</h4>
             <aside class="hidden-sm">
                 <figure class="col-md-2 centerfigu">
@@ -277,7 +350,7 @@
                 </figure>
             </aside>
         </div>
-        <div class="section row well">
+        <div id="team1" class="section row well">
             <h4 class="col-md-12 center">Une équipe créative et dynamique</h4>
             <article class="col-md-10 well">
                 Au début j'ai dit <strong>"je"</strong>, après j'ai dit <strong>"nous"</strong>. Mais suis-je vraiment entouré d'une <strong>"team"</strong> ? On peut dire que oui, en fait pour vous expliquer mon fonctionnement je crée seul ce site, ainsi que <strong>RedMeca</strong> mais je ne serais pas le seul à poster du <strong>contenu</strong> ! En fait je vais m'occuper en grande partie de la catégorie <strong>Multimédia</strong>, je serai aussi un peu présent dans la catégorie <strong>Games</strong> mais ce seront plus des amis à moi qui créront le contenu, que je monterais et publierais. De même je ne suis pas seul à faire notre <strong>série</strong> et ce sera mon frère qui s'occuperas plus de la partie <strong>maths</strong> et <strong>physique</strong>. Je serais aussi épaulé dans la partie <strong>réflexion</strong>. Vous l'aurez compris je m'occupe plus de la partie technique que créative.<br/>Enfin, je suis ouvert à toutes les contributions de votre part, si vous souhaitez participer à l'aventure <strong>RedMeca</strong> il vous suffit de me contacter par <a href="mailto:redmeca.yt@gmail.com" class="mail" type="mail">mail</a> je vous répondrai dans la mesure du possible...
@@ -302,7 +375,7 @@
                 </figure>
             </aside>
             <article class="col-sm-10 well">
-                <blockquote>
+                <blockquote class="center">
                     Les techniques de pointe ou, abusivement, hautes technologies ou technologies de pointe, aussi connues sous l'anglicisme high-tech (pour high technology), sont des techniques considérées comme les plus avancées à une époque donnée. Faiblement employé avant les années 1970, l'usage de cette notion est partiale et cette définition permet aujourd'hui aux départements marketing de décrire tous les nouveaux produits comme de la high-tech.<br/>
                     <small class="pull-right">Wikipédia</small>
                 </blockquote>
@@ -381,9 +454,17 @@
             </article>
         </div>
       </section>
-      <script src="http://code.jquery.com/jquery.3.1.1.min.js">
+      <script src="bootstrap-3.3.7-dist/js/jquery-3.1.1.min.js"></script>
+      <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+      <script>
+         $(function() {
+            $('#collapser').click(function() {
+                $('#collapsed').collapse('toggle');
+            });
+            $('#collapser2').click(function() {
+                $('#collapsed2').collapse('toggle');
+            });
+         });
       </script>
-      <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js">
-     </script>
   </body>
 </html>
