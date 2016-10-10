@@ -25,7 +25,7 @@
                 <div class="navbar-header hidden-xs hidden-sm hidden-md col-lg-2">
                     <a href="index.html" class="navbar-brand btn">Red Meca</a>                    
                 </div>
-                <ul class="nav navbar-nav btn-group col-md-12 col-lg-8">
+                <ul class="nav navbar-nav btn-group col-md-10 col-lg-8">
                     <li><a href="pages_cat/creaprod.html" class="btn btn-sm1">CréaProd</a></li>
                     <li><a href="pages_cat/multimedia.html" class="btn btn-sm1">Multimédia</a></li>
                     <li><a href="pages_cat/games.html" class="btn btn-sm1">Games</a></li>
@@ -35,6 +35,10 @@
                     <li><a href="pages_cat/reflexion.html" class="btn btn-sm1">Réflexion</a></li>
                     <li><a href="pages_cat/bazar.html" class="btn btn-sm1">Bazar</a></li>
                 </ul>
+                <a href="Visitor/Profil.html" class=" col-lg-2 col-md-2 btn btn-warning aprofil">
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                    Mon Profil
+                </a>
                 <input type="search" placeholder="Recherche" class="input-md form-control"/>
             </nav>
             <div class="row">
@@ -56,6 +60,43 @@
                 <button class="btn  col-xs-offset-2 col-xs-4 btnxs">Bazar</button>
             </div>
       </header>
+      <section class="forum">
+        <form class="form col-xs-12 well">
+          <legend>Besoin d'aide ? On a des forums !</legend>
+            <div class="form-group">
+                <label for="select">Choisissez la catégorie : </label>
+                <select id="select" class="form-control" required name="Choisissez votre catégorie">
+                    <optgroup label="Choisissez votre catégorie">
+                    <option disabled selected label="A vous de choisir" class="place"></option>
+                    <option>CréaProd</option>
+                    <option>Multimédia</option>
+                    <option>Games</option>
+                    <option>PodVlogs</option>
+                    <option>Sciences</option>
+                    <option>SérieMovies</option>
+                    <option>Réflexion</option>
+                    <option>Bazar</option>
+                    </optgroup>>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Pseudo">Pseudonyme :</label>
+                <input id="Pseudo" type="text" class="form-control" placeholder="Ex: RedMeca"/>
+            </div>
+            <div class="form-group">
+                <label for="Sujet">Sujet :</label>
+                <input id="Sujet" type="text" class="form-control"  placeholder="Ex: Je n'arrive pas à faire un popover en jquery et bootstrap ! "/>
+            </div>
+            <div class="form-group">
+                <label for="text">Votre message :</label>
+                <textarea id="text" type="textarea" rows="5" class="form-control" placeholder="Expliquez clairement en argémentant de code ou d'image si nécéssaire !"></textarea>
+            </div>
+            <button class="btn btn-warning pull-right" type="submit">
+                <span class="glyphicon glyphicon-ok"></span>
+                Envoyer
+            </button>
+        </form>
+      </section>
       <section class="hidden-xs hidden-md hidden-lg">
         <div class="section row well">
             <h4 class="col-md-12 center">Un thème : le High-Tech</h4>
@@ -340,5 +381,9 @@
             </article>
         </div>
       </section>
+      <script src="http://code.jquery.com/jquery.3.1.1.min.js">
+      </script>
+      <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js">
+     </script>
   </body>
 </html>

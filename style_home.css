@@ -117,15 +117,12 @@ article
 
 .centerfigu
 {
-    margin-top: 5%;
 }
 .centerfigu2
 {
-    margin-top: 7%;
 }
 .centerfigu3
 {
-    margin-top: 0.5%;
 }
 .orange
 {
@@ -149,22 +146,22 @@ h4
 {
     font-size: 200%;
 }
-a:hover
+.a:hover
 {
     text-decoration: none;
     color: #e67e22; 
 }
-a:visited
+.a:visited
 {
     text-decoration: none;
     color: #e67e22;
 }
-a:focus
+.a:focus
 {
     text-decoration: none;
     color: #e67e22;
 }
-a
+.a
 {
     color: #e67e22;
 }
@@ -172,4 +169,21 @@ a
 {
     background-image: url(bg/IMG_20160917_133006.jpg);
     background-size: cover;
+}
+.aprofil
+{
+    display: inline-block;
+    width: 16%;
+    color: #FFF;
+    margin-top:  0.5%;
+    margin-bottom: 0.5%;
+}
+.form
+{
+    margin-top: 1%;
+}
+.place
+{
+    font-style: italic;
+    color: grey;
 }
