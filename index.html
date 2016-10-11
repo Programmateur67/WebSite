@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
    <head>
@@ -21,7 +20,7 @@
   </head>
   <body class="container-fluid">
       <header class="row hidden-xs">
-            <nav class="navbar navbar-default navbar-fixed-top col-md-12">
+            <nav class="navbar navbar-default navbar-fixed-top ban col-md-12">
                 <div class="navbar-header hidden-xs hidden-sm hidden-md col-lg-2">
                     <a href="index.html" class="navbar-brand btn">Red Meca</a>                    
                 </div>
@@ -81,28 +80,52 @@
                     </ul>
                 </div>
             </nav>
-            <div class="row ban">
+            <div class="row">
                 <img src="banniere.png" alt="bannière" class="img-responsive"/>
             </div>
       </header>
       <header class="row hidden-lg hidden-md hidden-sm">
-            <div class="row">
+        <div class="navbar navbar-default navbar-fixed-top col-xs-12 ban row">
+            <div>
+                <a role="button" id="collapserxs" class="bars btn col-xs-2"><span class="fa fa-bars"></span></a>
+            </div>
+            <div class="navbar-header col-xs-8">
+                <a href="index.html" class="navbar-brand btn">Red Meca</a>                    
+            </div>
+            <a href="Visitor/Profil.html" class="col-xs-2 btn btn-warning aprofil">
+                <span class="fa fa-user" aria-hidden="true"></span>
+            </a>
+            <div id="collapsedxs">
+                <div class="row">
+                    <ul class="nav navbar-nav btn-group col-xs-12">
+                        <li class="inline"><a href="#Séries" class="btn btn-sm1">Séries</a></li>
+                        <li class="inline"><a href="#CréaProd" class="btn btn-sm1">CréaProd</a></li>
+                        <li class="inline"><a href="#Multimédia" class="btn btn-sm1">Multimédia</a></li>
+                        <li class="inline"><a href="#Games" class="btn btn-sm1">Games</a></li>
+                        <li class="inline"><a href="#PodVlogs" class="btn btn-sm1">PodVlogs</a></li>
+                        <li class="inline"><a href="#Sciences" class="btn btn-sm1">Sciences</a></li>
+                        <li class="inline"><a href="#SérieMovies" class="btn btn-sm1">SérieMovies</a></li>
+                        <li class="inline"><a href="#Réflexion" class="btn btn-sm1">Réflexion</a></li>
+                        <li class="inline"><a href="#Bazar" class="btn btn-sm1">Bazar</a></li>
+                        <li class="inline"><a href="#Forum" class="btn btn-sm1">Forums</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <input type="search" placeholder="Recherche" class="input-md form-control"/>
+                    <ul class="row">
+                        <li><a href="#htxs" class="col-xs-3 center btn btn-warning">Du High-Tech</a></li>
+                        <li><a href="#catxs" class="col-xs-3 col-xs-offset-1 center btn btn-warning">Des catégories</a></li>
+                        <li><a href="#teamxs" class="col-xs-3 col-xs-offset-1 center btn btn-warning">Une team</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
                 <img src="banniere.png" alt="bannière" class="img-responsive"/>
-            </div>
-            <div class="row bgspe">
-                <button class="btn  col-xs-offset-1 col-xs-4 btnxs">Créaprod</button>
-                <button class="btn  col-xs-offset-2 col-xs-4 btnxs">Multimédia</button>
-                <button class="btn  col-xs-offset-1 col-xs-4 btnxs">Games</button>
-                <button class="btn  col-xs-offset-2 col-xs-4 btnxs">PodVlogs</button>
-                <button class="btn  col-xs-offset-1 col-xs-4 btnxs">Sciences</button>
-                <button class="btn  col-xs-offset-2 col-xs-4 btnxs">SérieMovies</button>
-                <button class="btn  col-xs-offset-1 col-xs-4 btnxs">Réflexion</button>
-                <button class="btn  col-xs-offset-2 col-xs-4 btnxs">Bazar</button>
-            </div>
+        </div>
       </header>
       <div>
         <section id="Séries" class="section row">
-        <h1>En construction</h1>
       </section>
         <section id="CréaProd" class="section1 row">
         <h1>En construction</h1>
@@ -167,7 +190,6 @@
         </form>
       </section>
       </div>
-      <span id="end"></span>
       <section class="hidden-xs hidden-md hidden-lg">
         <div class="">
             <div id="ht" class="section row well">
@@ -365,7 +387,7 @@
         </div>
       </section>
       <section class="hidden-sm hidden-md hidden-lg">
-        <div class="section row well">
+        <div id="htxs" class="section row well">
             <h4 class="col-sm-12 center">Un thème : le High-Tech</h4>
             <aside>
                 <figure class="col-sm-2">
@@ -384,7 +406,7 @@
                     J'ai décidé que le thème de site sera le High-Tech car j'en suis un passioné, je me pasionne pour tout ce qui est scientifique, informatique. J'adore le <strong>design</strong>, j'adore <strong>coder</strong>, plus tard je veux être dans la <strong>sécurité informatique</strong>.<br/><a href="pages_cat/moi.html" class="a pull-right">En savoir plus sur moi</a></p>
             </article>
         </div>
-        <div class="section1 row well">
+        <div id="catxs" class="section1 row well">
             <h4 class="col-sm-12 center">De la diversité : 8 catégories</h4>
             <aside>
                 <figure class="col-sm-2">
@@ -440,7 +462,7 @@
                 </div>
             </article>
         </div>
-        <div class="section row well">
+        <div id="teamxs" class="section row well">
             <h4 class="col-sm-12 center">Une équipe créative et dynamique</h4>
             <aside>
                 <figure class="col-sm-2">
@@ -463,6 +485,9 @@
             });
             $('#collapser2').click(function() {
                 $('#collapsed2').collapse('toggle');
+            });
+            $('#collapserxs').click(function() {
+                $('#collapsedxs').collapse('toggle');
             });
          });
       </script>
