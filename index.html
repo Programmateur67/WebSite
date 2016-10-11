@@ -18,7 +18,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="container-fluid">
+  <body class="container-fluid" data-spy="srcoll" data-target=".navbar">
       <header class="row hidden-xs">
             <nav class="navbar navbar-default navbar-fixed-top ban col-md-12">
                 <div class="navbar-header hidden-xs hidden-sm hidden-md col-lg-2">
@@ -479,7 +479,7 @@
       <script src="bootstrap-3.3.7-dist/js/jquery-3.1.1.min.js"></script>
       <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
       <script>
-         $(function() {
+        $(function(){     
             $('#collapser').click(function() {
                 $('#collapsed').collapse('toggle');
             });
@@ -488,6 +488,23 @@
             });
             $('#collapserxs').click(function() {
                 $('#collapsedxs').collapse('toggle');
+            });
+        });
+      </script>
+      <script>
+         $(function() {
+            $('li>a').on('click', function(e) {
+                e.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                scrollTop: $(this.hash).offset().top
+                }, 1000, function(){
+                window.location.hash = hash;
+                });
+            });
+            $('body').scrollspy({ target: '.navbar' });
+            $('[data-spy="scroll"]').each(function () {
+                var $spy = $(this).scrollspy('refresh')
             });
          });
       </script>
